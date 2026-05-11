@@ -1,0 +1,9 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Next.js + FastAPI + edge-tts + pydub
+  Architecture: Fullstack separation.
+  Testing: None
+  Style: default
+
+strict_tdd: false

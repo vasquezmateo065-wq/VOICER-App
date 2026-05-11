@@ -1,0 +1,3 @@
+SUCCESS: Magpie-Multilingual.EN-US.Aria / en-US
+SUCCESS: Magpie-Multilingual.EN-US.Sofia / en-US
+SUCCESS: Magpie-Multilingual.ES-US.Aria / es-US

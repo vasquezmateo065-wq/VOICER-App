@@ -1,0 +1,26 @@
+ERROR: Magpie-Multilingual / es-ES -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>
+SUCCESS: Magpie-Multilingual.ES-US.Mia / es-US
+ERROR: Mia / es-US -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Mia for language es-US not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Model is not available on server: Voice Mia for language es-US not found. Please specify the voice name in your SynthesizeSpeechRequest.", grpc_status:3}"
+>
+ERROR: Spanish-US.Female-1 / es-US -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Spanish-US for language es-US not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice Spanish-US for language es-US not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>
+ERROR: Spanish-US.Female-1 / es-ES -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Spanish-US for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice Spanish-US for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>
+ERROR: English-US.Female-1 / en-US -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice English-US for language en-US not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice English-US for language en-US not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>

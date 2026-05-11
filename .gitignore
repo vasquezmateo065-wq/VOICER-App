@@ -1,0 +1,29 @@
+# Python
+venv/
+*.pyc
+__pycache__/
+*.egg-info/
+dist/
+build/
+
+# Node
+node_modules/
+.next/
+npm-debug.log*
+
+# Audio generated
+mp3_files/
+backend/output/
+output_final.mp3
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store

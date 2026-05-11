@@ -1,0 +1,28 @@
+# === VOICER Backend — Dependencias Completas ===
+# Instalar con: pip install -r requirements.txt
+
+# Servidor web y API
+fastapi>=0.100.0
+uvicorn>=0.23.0
+starlette>=0.27.0
+
+# Validación de datos
+pydantic>=2.0.0
+
+# Variables de entorno
+python-dotenv>=1.0.0
+
+# Motor Edge TTS (gratuito, 322+ voces)
+edge-tts>=7.0.0
+
+# Motor NVIDIA Magpie TTS (Premium, IA generativa)
+nvidia-riva-client>=2.0.0
+grpcio>=1.50.0
+protobuf>=4.0.0
+numpy>=1.24.0
+
+# Procesamiento de audio
+pydub>=0.25.0
+
+# Cliente HTTP (para futuras integraciones)
+httpx>=0.24.0

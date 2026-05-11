@@ -1,0 +1,6 @@
+# === VOICER — Dependencias del Backend ===
+# Instalar con: pip install -r requirements.txt
+-r backend/requirements.txt
+
+# Streamlit (versión standalone, solo Edge TTS)
+streamlit>=1.28.0

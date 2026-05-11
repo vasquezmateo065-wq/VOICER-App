@@ -1,0 +1,15 @@
+ERROR: Magpie-Multilingual.es-ES.Mia / es-ES -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>
+ERROR: Magpie-Multilingual.es-ES / es-ES -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>
+ERROR: Magpie-Multilingual.ES-ES / es-ES -> <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INVALID_ARGUMENT
+	details = "Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_status:3, grpc_message:"Model is not available on server: Voice Magpie-Multilingual for language es-ES not found. Please specify the voice name in your SynthesizeSpeechRequest."}"
+>
