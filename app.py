@@ -7,7 +7,7 @@ import os
 import shutil
 
 # --- Configuración de la página ---
-st.set_page_config(page_title="VOICER", page_icon="🎙️", layout="centered")
+st.set_page_config(page_title="VOICER v2.0", page_icon="🎙️", layout="centered")
 
 # --- Estilos CSS Premium ---
 st.markdown("""
@@ -70,7 +70,7 @@ def create_audio_sync(text, voice, output_path):
 
 # --- UI Principal ---
 st.title("🎙️ Generador Bilingüe VOICER")
-st.markdown("Crea inmersión bilingüe en audio mediante bloques personalizables.")
+st.markdown("Crea inmersión bilingüe — v2.0 • 90 voces Neural • 320kbps")
 
 st.divider()
 
