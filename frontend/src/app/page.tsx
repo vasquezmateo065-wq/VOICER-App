@@ -300,7 +300,7 @@ export default function HomePage() {
                 onClick={() => setEngine("edge")}
                 className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-medium transition-all ${engine === "edge" ? "ring-1" : "opacity-60 hover:opacity-80"}`}
                 style={engine === "edge"
-                  ? { background: "var(--accent-soft)", color: "var(--accent-primary)", ringColor: "var(--accent-primary)" }
+                  ? { background: "var(--accent-soft)", color: "var(--accent-primary)" }
                   : { background: "rgba(255,255,255,0.04)", color: "var(--text-muted)" }
                 }>
                 <Zap size={15} />
@@ -317,7 +317,7 @@ export default function HomePage() {
                 disabled={!nvidiaAvailable}
                 className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-medium transition-all ${engine === "nvidia" ? "ring-1" : nvidiaAvailable ? "opacity-60 hover:opacity-80" : "opacity-30 cursor-not-allowed"}`}
                 style={engine === "nvidia"
-                  ? { background: "rgba(52,211,153,0.12)", color: "#34d399", ringColor: "#34d399" }
+                  ? { background: "rgba(52,211,153,0.12)", color: "#34d399" }
                   : { background: "rgba(255,255,255,0.04)", color: "var(--text-muted)" }
                 }>
                 <Cpu size={15} />
