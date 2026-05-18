@@ -441,7 +441,7 @@ def apply_eq_ffmpeg(input_path: str, output_path: str, bass: int, treble: int) -
 # ===========================================================================
 
 # Audio quality constants — evitar distorsión por mismatch de sample rate
-AUDIO_FR = 24000      # sample rate (edge-tts usa ~24kHz)
+AUDIO_FR = 44100      # sample rate (NVIDIA nativo 44.1kHz, edge-tts se upsampling limpio)
 AUDIO_SW = 2          # sample width en bytes (16-bit)
 AUDIO_CH = 1          # mono
 

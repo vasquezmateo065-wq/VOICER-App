@@ -219,7 +219,7 @@ if st.button("🚀 Generar Audio Final", type="primary", use_container_width=Tru
             final_audio = AudioSegment.empty()
             
             # Parámetros de audio consistentes — los fijamos al cargar el primer segmento
-            audio_fr = 24000      # sample rate por defecto (edge-tts usa ~24kHz)
+            audio_fr = 44100      # sample rate compatible con NVIDIA y edge-tts
             audio_sw = 2          # sample width en bytes (16-bit)
             audio_ch = 1          # mono
             
