@@ -1,7 +1,12 @@
-# === VOICER Streamlit Standalone — dependencias exclusivas ===
-# El backend (FastAPI + NVIDIA) usa su propio backend/requirements.txt
-# pydub necesita audioop (eliminado de Python 3.13+). Usamos nuestro propio
-# pyaudioop.py (pure Python, sin C extensions) en la raíz del proyecto.
+# === VOICER Streamlit — dependencias completas ===
+# pyaudioop.py en raíz del proyecto reemplaza audioop (eliminado Python 3.13+)
 streamlit>=1.28.0
 edge-tts>=7.0.0
 pydub>=0.25.0
+
+# NVIDIA Premium TTS (Magpie Multilingual)
+# Si falla la instalación, la app corre en modo Estándar sin problemas
+nvidia-riva-client>=2.0.0
+grpcio>=1.50.0
+protobuf>=4.0.0
+numpy>=1.24.0
