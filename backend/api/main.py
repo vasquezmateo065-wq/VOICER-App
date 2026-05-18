@@ -16,6 +16,16 @@ import os
 import time as time_module
 from pathlib import Path
 from pydub import AudioSegment
+import shutil as _shutil
+
+
+def _get_ffmpeg() -> str:
+    """Devuelve la ruta a ffmpeg, descargándolo con imageio-ffmpeg si es necesario."""
+    ffmpeg = _shutil.which("ffmpeg")
+    if ffmpeg:
+        return ffmpeg
+    import imageio_ffmpeg
+    return imageio_ffmpeg.get_ffmpeg_exe()
 
 # Cargar variables de entorno desde backend/.env
 load_dotenv(Path(__file__).parent.parent / ".env")
@@ -347,9 +357,9 @@ async def generate_nvidia_audio(text: str, voice: str, out_path: str) -> bool:
                 wf.setframerate(44100)
                 wf.writeframesraw(resp.audio)
             
-            # Convertir WAV a MP3 usando FFmpeg
+            # Convertir WAV a MP3 usando FFmpeg (auto-descargado si no está en el sistema)
             result = subprocess.run(
-                ["ffmpeg", "-y", "-i", wav_path, "-codec:a", "libmp3lame", "-q:a", "2", out_path],
+                [_get_ffmpeg(), "-y", "-i", wav_path, "-codec:a", "libmp3lame", "-q:a", "2", out_path],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 timeout=30
@@ -407,7 +417,7 @@ def apply_eq_ffmpeg(input_path: str, output_path: str, bass: int, treble: int) -
         filters.append(f"treble=g={treble}:f=3000:w=0.5")
 
     cmd = [
-        "ffmpeg", "-y",
+        _get_ffmpeg(), "-y",
         "-i", input_path,
         "-af", ",".join(filters),
         "-codec:a", "libmp3lame",
