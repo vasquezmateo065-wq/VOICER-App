@@ -463,9 +463,9 @@ def _load_mp3_normalized(path: str) -> AudioSegment:
         seg = seg.set_sample_width(AUDIO_SW)
     if seg.channels != AUDIO_CH:
         seg = seg.set_channels(AUDIO_CH)
-    # Fade out sutil de 20ms — elimina artefactos del modelo NVIDIA al final de frases
-    if len(seg) > 40:
-        seg = seg.fade_out(20)
+    # Fade in/out sutil — suaviza artefactos del modelo NVIDIA en bordes de frases
+    if len(seg) > 60:
+        seg = seg.fade_in(10).fade_out(30)
     return seg
 
 
