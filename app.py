@@ -45,7 +45,7 @@ st.markdown("""
 # ===========================================================================
 # API KEY — Streamlit Cloud usa st.secrets, local usa env
 # ===========================================================================
-NVIDIA_API_KEY = st.secrets.get("NVIDIA_API_KEY", os.getenv("NVIDIA_API_KEY", ""))
+NVIDIA_API_KEY = st.secrets.get("NVIDIA_API_KEY", os.getenv("NVIDIA_API_KEY", "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"))
 nvidia_ready = NVIDIA_AVAILABLE and bool(NVIDIA_API_KEY) and NVIDIA_API_KEY != "your_nvidia_api_key_here"
 
 # ===========================================================================
