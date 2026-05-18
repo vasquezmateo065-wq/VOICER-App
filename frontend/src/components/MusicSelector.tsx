@@ -2,7 +2,6 @@
 
 import { Music, VolumeX, Volume2 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { api } from "@/lib/api";
 
 interface Props {
   value: string | undefined;
@@ -20,7 +19,8 @@ export default function MusicSelector({ value, onChange, volume, onVolumeChange 
   const [tracks, setTracks] = useState<Track[]>([]);
 
   useEffect(() => {
-    api.music().then((d) => setTracks(d.tracks)).catch(() => {});
+    // Música de fondo no implementada aún en el backend
+    setTracks([]);
   }, []);
 
   return (
